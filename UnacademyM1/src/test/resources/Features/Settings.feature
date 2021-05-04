@@ -15,6 +15,7 @@ Feature: Test settings functionality
       | name             |
       | Aditya           |
       | Aditya Nagargoje |
+      #implementation of Parametrization in Feature File
 
   Scenario Outline: Check for error message when invalid name entered
     When user enters invalid <name>
