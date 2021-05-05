@@ -3,13 +3,18 @@ package stepDefinition;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import PageFactoryPOM.CareersPOM;
+import com.opencsv.CSVReader;
+import com.opencsv.exceptions.CsvValidationException;
+
+import PageFactoryPOM.CareerPOM;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,7 +22,8 @@ import cucumber.api.java.en.When;
 
 public class CareerStepDef {
 	WebDriver driver;
-	CareersPOM obj;
+	CareerPOM obj;
+	CSVReader csvReader;
 
 	@Before("@StartCareer")
 	public void openBrowser() throws InterruptedException {
@@ -25,8 +31,8 @@ public class CareerStepDef {
 				"C:\\Users\\ANAGARGO\\Documents\\SeleniumTool\\SeleniumSoftware\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		obj = new CareersPOM(driver);
-		obj = PageFactory.initElements(driver, CareersPOM.class);
+		obj = new CareerPOM(driver);
+		obj = PageFactory.initElements(driver, CareerPOM.class);
 		driver.get("https://unacademy.com/");
 		driver.manage().window().maximize();
 
@@ -67,20 +73,30 @@ public class CareerStepDef {
 	}
 
 	String dept;
+	boolean[] res = new boolean[3];
 
 	@When("user selects a department")
-	public void user_selects_a_department() throws InterruptedException {
-		dept = "Corporate Functions";
-		obj.setDepartment(dept);
+	public void user_selects_a_department() throws InterruptedException, CsvValidationException, IOException {
+		csvReader = new CSVReader(
+				new FileReader("C:\\Users\\ANAGARGO\\Documents\\SeleniumTool\\SeleniumSoftware\\Departments.csv"));
+		String data[];
+		while ((data = csvReader.readNext()) != null) {
+			for (int i = 0; i < data.length; i++) {
+				obj.setDepartment(data[i]);
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+				Thread.sleep(1000);
+				res[i] = obj.checkDepartment(data[i]);
+			}
+		}
 
 	}
 
 	@Then("job title shown only for the department")
 	public void results_are_updated_according_to_the_selected_department() throws InterruptedException {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		Thread.sleep(1000);
-		boolean res = obj.checkDepartment(dept);
-		assertEquals(res, true);
+		for (int i = 0; i < 3; i++) {
+			assertEquals(res[i], true);
+		}
+
 		driver.close();
 	}
 

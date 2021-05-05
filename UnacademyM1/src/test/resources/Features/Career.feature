@@ -24,7 +24,8 @@ Feature: Test careers functionality
     Given user is on careers page
     When user selects any location, department, work type
     Then results are updated
- #according to the selected location, department, work type
+
+  #according to the selected location, department, work type
   @ClearFilter
   Scenario: Check clear filters functionality
     Given user have selected some filters

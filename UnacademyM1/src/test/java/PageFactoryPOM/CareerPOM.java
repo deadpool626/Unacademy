@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class CareersPOM {
+public class CareerPOM {
 	WebDriver driver;
 	@FindBy(xpath = "//input[@placeholder='Search jobs…']")
 	WebElement SearchInput;
@@ -51,7 +51,7 @@ public class CareersPOM {
 	@FindBy(xpath = "//h2[normalize-space()='Sorry, no jobs found matching this criteria.']")
 	WebElement SearchErrorMessage;
 
-	public CareersPOM(WebDriver driver) {
+	public CareerPOM(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -81,14 +81,18 @@ public class CareersPOM {
 		DeptSearch.sendKeys(Keys.ENTER);
 	}
 
-	public boolean checkDepartment(String dept) {
+	public boolean checkDepartment(String dept) throws InterruptedException {
 		String str = SelectedDept.getText();
-
+		Thread.sleep(3000);
 		if (str.contains(dept)) {
 			System.out.println("*****Department is same as selected*****");
+			Department.click();
+			ClearF.click();
 			return true;
 		} else {
 			System.out.println("*****Department is different than selected*****");
+			Department.click();
+			ClearF.click();
 			return false;
 		}
 	}
