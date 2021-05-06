@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ANAGARGO\AppData\Local\Temp\testng-eclipse--506624663\testng-customsuite.xml</span>
+                    <span>C:\Users\ANAGARGO\AppData\Local\Temp\testng-eclipse--519201006\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.TestRunner" class="method navigator-link" hash-for-method="feature(Test apply to job functionality)">feature(Test apply to job functionality)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="TestRunner.TestNGRunner" class="method navigator-link" hash-for-method="feature(Test apply to job functionality)">feature(Test apply to job functionality)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,7 +120,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestRunner.TestRunner</span>
+              <span class="class-name">TestRunner.TestNGRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -162,8 +162,8 @@ Caused by: java.lang.AssertionError: expected [true] but found [false]
 	at org.testng.Assert.failNotEquals(Assert.java:776)
 	at org.testng.Assert.assertTrue(Assert.java:44)
 	at org.testng.Assert.assertTrue(Assert.java:54)
-	at stepDefinition.ApplicationStepDef.invalid_relative_experience_message_should_be_displayed(ApplicationStepDef.java:137)
-	at ✽.And Invalid relative experience message should be displayed(src/test/resources/Features/Application.feature:43)
+	at stepDefinition.ApplicationStepDef.error_is_displyed(ApplicationStepDef.java:106)
+	at ✽.And invalid phone number is displyed(src/test/resources/Features/Application.feature:16)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -175,7 +175,7 @@ Caused by: java.lang.AssertionError: expected [true] but found [false]
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ANAGARGO\AppData\Local\Temp\testng-eclipse--506624663\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ANAGARGO\AppData\Local\Temp\testng-eclipse--519201006\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -184,7 +184,7 @@ Caused by: java.lang.AssertionError: expected [true] but found [false]
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestRunner.TestRunner&quot;/&gt;
+      &lt;class name=&quot;TestRunner.TestNGRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -235,13 +235,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
-data.setCell(0, 2, 'TestRunner.TestRunner')
-data.setCell(0, 3, 98618);
+data.setCell(0, 2, 'TestRunner.TestNGRunner')
+data.setCell(0, 3, 361940);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -267,7 +267,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestRunner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">TestRunner.TestNGRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
@@ -276,11 +276,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Test apply to job functionality)</span>
-                <span class="method-start">553 ms</span>
+                <span class="method-start">574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">99180 ms</span>
+                <span class="method-start">362522 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

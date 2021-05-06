@@ -171,7 +171,8 @@ public class ApplicationPageFactory {
 		Submit.click();
 	}
 
-	public boolean SuccessMesaage() {
+	public boolean SuccessMesaage() throws InterruptedException {
+		Thread.sleep(5000);
 		boolean res = SuccessMessage.isDisplayed();
 		System.out.println("#####Submitted Form##### " + res);
 		return res;

@@ -1,0 +1,430 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 4,
+            "value": "#To check if location filter works properly"
+          }
+        ],
+        "line": 6,
+        "name": "Check results by selecting Location filter",
+        "description": "",
+        "id": "test-careers-functionality;check-results-by-selecting-location-filter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11343380800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on careers page",
+            "match": {
+              "location": "CareerStepDef.user_is_on_careers_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2254338100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user selects a location",
+            "match": {
+              "location": "CareerStepDef.user_selects_a_location()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1426962900,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "jobs available at the location are displayed",
+            "match": {
+              "location": "CareerStepDef.results_are_updated_according_to_the_selected_location()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@Location"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 11,
+            "value": "#To check if department filter works properly"
+          }
+        ],
+        "line": 13,
+        "name": "Check results by selecting Department filter",
+        "description": "",
+        "id": "test-careers-functionality;check-results-by-selecting-department-filter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8975894000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user is on careers page",
+            "match": {
+              "location": "CareerStepDef.user_is_on_careers_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 26704752200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user selects a department",
+            "match": {
+              "location": "CareerStepDef.user_selects_a_department()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 220774500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "job title shown only for the department",
+            "match": {
+              "location": "CareerStepDef.results_are_updated_according_to_the_selected_department()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Department"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 18,
+            "value": "#To check if work type filter works properly"
+          }
+        ],
+        "line": 20,
+        "name": "Check results by selecting Work Type filter",
+        "description": "",
+        "id": "test-careers-functionality;check-results-by-selecting-work-type-filter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9513782200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user is on careers page",
+            "match": {
+              "location": "CareerStepDef.user_is_on_careers_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3289086800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user selects a work type",
+            "match": {
+              "location": "CareerStepDef.user_selects_a_work_type()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1346434000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "titles with selected Work Type are displayed",
+            "match": {
+              "location": "CareerStepDef.results_are_updated_according_to_the_selected_work_type()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@WorkType"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 25,
+            "value": "#To check whether filter functionality works when each of them is selected"
+          }
+        ],
+        "line": 27,
+        "name": "Check results by selecting Location, Department, Work Type filter",
+        "description": "",
+        "id": "test-careers-functionality;check-results-by-selecting-location,-department,-work-type-filter",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8867198100,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user is on careers page",
+            "match": {
+              "location": "CareerStepDef.user_is_on_careers_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8327617000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user selects any location, department, work type",
+            "match": {
+              "location": "CareerStepDef.user_selects_any_location_department_work_type()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4464016600,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "results are updated",
+            "match": {
+              "location": "CareerStepDef.results_are_updated_according_to_the_selected_location_department_work_type()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 26,
+            "name": "@AllFilters"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 32,
+            "value": "#To check if user is able to clear applied filters"
+          }
+        ],
+        "line": 34,
+        "name": "Check clear filters functionality",
+        "description": "",
+        "id": "test-careers-functionality;check-clear-filters-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8013569400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user is on careers page",
+            "match": {
+              "location": "CareerStepDef.user_is_on_careers_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8347810700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user have selected some filters",
+            "match": {
+              "location": "CareerStepDef.user_have_selected_some_filters()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 149262500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user clicks on clear filters",
+            "match": {
+              "location": "CareerStepDef.user_clicks_on_clear_filters()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 262730600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "all jobs are displayed",
+            "match": {
+              "location": "CareerStepDef.all_jobs_are_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 33,
+            "name": "@ClearFilter"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 40,
+            "value": "#To check if only provided job titles are displayed"
+          }
+        ],
+        "line": 42,
+        "name": "Check search functionality",
+        "description": "",
+        "id": "test-careers-functionality;check-search-functionality",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8616577200,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user is on careers page",
+            "match": {
+              "location": "CareerStepDef.user_is_on_careers_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 454310000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user inputs a particular job title",
+            "match": {
+              "location": "CareerStepDef.user_inputs_a_particular_job_title()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4254233500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "respective job is displayed",
+            "match": {
+              "location": "CareerStepDef.respective_job_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 41,
+            "name": "@SearchValid"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 47,
+            "value": "#To check for error message when user provides invalid input"
+          }
+        ],
+        "line": 49,
+        "name": "Check search functionality for invalid inputs",
+        "description": "",
+        "id": "test-careers-functionality;check-search-functionality-for-invalid-inputs",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8899535000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user is on careers page",
+            "match": {
+              "location": "CareerStepDef.user_is_on_careers_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 329935300,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user inputs irrelevant keywords",
+            "match": {
+              "location": "CareerStepDef.user_inputs_irrelevant_keywords()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4359626500,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "error message displayed",
+            "match": {
+              "location": "CareerStepDef.error_message_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 48,
+            "name": "@SearchInvalid"
+          }
+        ]
+      }
+    ],
+    "name": "Test careers functionality",
+    "description": "Description: It will check if filters, clear filter and search job title functionality",
+    "id": "test-careers-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Features/Career.feature"
+  }
+]

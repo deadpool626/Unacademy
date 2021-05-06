@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
 
 import PageFactoryPOM.ApplicationPageFactory;
 import cucumber.api.java.en.Given;
@@ -17,8 +18,8 @@ public class ApplicationStepDef {
 	WebDriver driver;
 	ApplicationPageFactory obj;
 
+	@Test(priority = 1)
 	@Given("^user has selected a job$")
-
 	public void user_has_selected_a_job() throws Throwable {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\ANAGARGO\\Documents\\SeleniumTool\\SeleniumSoftware\\chromedriver_win32\\chromedriver.exe");
@@ -30,17 +31,20 @@ public class ApplicationStepDef {
 		driver.manage().window().maximize();
 
 		driver.navigate().to("https://apply.workable.com/unacademy/");
-		driver.findElement(By.cssSelector("input[placeholder='Search jobs…']")).sendKeys("Java");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@aria-label='Search jobs…']")).sendKeys("Java");
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//li[1]//div[1]//a[1]")).click();
 	}
 
+	@Test(priority = 2)
 	@When("^user clicks on apply now$")
 	public void user_clicks_on_apply_now() throws Throwable {
 		Thread.sleep(3000);
 		obj.ApplyNow();
 	}
 
+	@Test(priority = 3)
 	@When("^enters valid data$")
 	public void enters_valid_data() throws Throwable {
 		Thread.sleep(3000);
@@ -56,6 +60,7 @@ public class ApplicationStepDef {
 		obj.Submit();
 	}
 
+	@Test(priority = 4)
 	@Then("^application is submitted$")
 	public void application_is_submitted() throws Throwable {
 		Thread.sleep(5000);
@@ -63,6 +68,7 @@ public class ApplicationStepDef {
 		driver.close();
 	}
 
+	@Test(priority = 2)
 	@Given("^clicked on apply now$")
 	public void clicked_on_apply_now() throws Throwable {
 		Thread.sleep(3000);
@@ -73,6 +79,7 @@ public class ApplicationStepDef {
 	boolean res;
 	int i = 0;
 
+	@Test(priority = 3)
 	@When("^user enters an invalid ([^\\\"]*)$")
 	public void user_enters_an_invalid(String arg) throws Throwable {
 		Thread.sleep(3000);
@@ -82,6 +89,7 @@ public class ApplicationStepDef {
 		res = obj.ValidatePhone(number);
 	}
 
+	@Test(priority = 4)
 	@Then("^user clicks on submit button$")
 	public void user_clicks_on_submit_button() throws InterruptedException {
 		Thread.sleep(2000);
@@ -89,6 +97,7 @@ public class ApplicationStepDef {
 		Thread.sleep(1500);
 	}
 
+	@Test(priority = 5)
 	@Then("^invalid phone number is displyed$")
 	public void error_is_displyed() {
 		if (res == false) {
@@ -101,6 +110,7 @@ public class ApplicationStepDef {
 
 	String location;
 
+	@Test(priority = 3)
 	@When("^user enters invalid as([^\\\"]*)$")
 	public void user_enters_invalid_as(String arg) throws Throwable {
 		location = arg;
@@ -109,6 +119,7 @@ public class ApplicationStepDef {
 		res = obj.ValidateLocation(location);
 	}
 
+	@Test(priority = 5)
 	@Then("^Location is not valid message is displayed$")
 	public void location_is_not_valid_message_is_displayed() throws Throwable {
 		if (res == false) {
@@ -121,6 +132,7 @@ public class ApplicationStepDef {
 
 	String exp;
 
+	@Test(priority = 3)
 	@When("^user enters invalid the([^\\\"]*)$")
 	public void user_enters_invalid_the(String arg) throws Throwable {
 		exp = arg;
@@ -129,6 +141,7 @@ public class ApplicationStepDef {
 		res = obj.ValidateRelExperience(exp);
 	}
 
+	@Test(priority = 5)
 	@Then("^Invalid relative experience message should be displayed$")
 	public void invalid_relative_experience_message_should_be_displayed() throws Throwable {
 		if (res == false) {

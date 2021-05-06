@@ -21,7 +21,7 @@ public class CareerPOM {
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/p[1]/span[2]")
 	WebElement SelectedLocation;
 
-	@FindBy(xpath = "//input[@id='departments-filter_input']")
+	@FindBy(xpath = "//input[contains(@value,'Department')]")
 	WebElement Department;
 
 	@FindBy(xpath = "//input[@placeholder='Search']")
@@ -30,7 +30,7 @@ public class CareerPOM {
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/p[1]/span[1]")
 	WebElement SelectedDept;
 
-	@FindBy(xpath = "//input[@id='worktypes-filter_input']")
+	@FindBy(xpath = "//input[@value='Work type ']")
 	WebElement WorkType;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[1]/div[2]/div[2]/div[3]/div[1]/dialog[1]/div[1]/div[1]/ul[1]/li[1]/div[1]/div[1]/span[1]")
@@ -42,7 +42,7 @@ public class CareerPOM {
 	@FindBy(xpath = "//a[normalize-space()='Clear filters']")
 	WebElement ClearF;
 
-	@FindBy(css = "input[placeholder='Search jobs…']")
+	@FindBy(xpath = "//input[@placeholder='Search jobs…']")
 	WebElement SearchJobs;
 
 	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/main[1]/div[2]/ul[1]/li[1]/div[1]/h3[1]")
@@ -56,7 +56,8 @@ public class CareerPOM {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void setLocation() {
+	public void setLocation() throws InterruptedException {
+		Thread.sleep(2000);
 		Location.click();
 		LocationIndia.click();
 
@@ -75,29 +76,37 @@ public class CareerPOM {
 
 	}
 
-	public void setDepartment(String dept) {
+	public void setDepartment(String dept) throws InterruptedException {
+		Thread.sleep(2000);
 		Department.click();
 		DeptSearch.sendKeys(dept);
 		DeptSearch.sendKeys(Keys.ENTER);
 	}
 
-	public boolean checkDepartment(String dept) throws InterruptedException {
+	public boolean checkDepartment(String dept, boolean b) throws InterruptedException {
 		String str = SelectedDept.getText();
-		Thread.sleep(3000);
+
 		if (str.contains(dept)) {
 			System.out.println("*****Department is same as selected*****");
-			Department.click();
-			ClearF.click();
+			if (b == true) {
+				Thread.sleep(3000);
+				// Department.click();
+				ClearF.click();
+			}
 			return true;
 		} else {
 			System.out.println("*****Department is different than selected*****");
-			Department.click();
-			ClearF.click();
+			if (b == true) {
+				Thread.sleep(3000);
+				// Department.click();
+				ClearF.click();
+			}
 			return false;
 		}
 	}
 
-	public void setWorkType() {
+	public void setWorkType() throws InterruptedException {
+		Thread.sleep(3000);
 		WorkType.click();
 		SelectWorkType.click();
 	}
