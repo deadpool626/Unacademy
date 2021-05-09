@@ -1,42 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="130.421829">
-<testcase classname="Test careers functionality" name="Check results by selecting Location filter" time="15.024682">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="139.998633">
+<testcase classname="Test careers functionality" name="Check results by selecting Location filter" time="15.027751">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user selects a location................................................passed
 Then jobs available at the location are displayed...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check results by selecting Department filter" time="35.901421">
+<testcase classname="Test careers functionality" name="Check results by selecting Department filter" time="38.161202">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user selects a department..............................................passed
 Then job title shown only for the department................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check results by selecting Work Type filter" time="14.149303">
+<testcase classname="Test careers functionality" name="Check results by selecting Work Type filter" time="14.927469">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user selects a work type...............................................passed
 Then titles with selected Work Type are displayed...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check results by selecting Location, Department, Work Type filter" time="21.658832">
+<testcase classname="Test careers functionality" name="Check results by selecting Location, Department, Work Type filter" time="23.666362">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user selects any location, department, work type.......................passed
 Then results are updated....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check clear filters functionality" time="16.773373">
+<testcase classname="Test careers functionality" name="Check clear filters functionality" time="20.210338">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 And user have selected some filters.........................................passed
 When user clicks on clear filters...........................................passed
 Then all jobs are displayed.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check search functionality" time="13.325121">
+<testcase classname="Test careers functionality" name="Check search functionality" time="13.847157">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user inputs a particular job title.....................................passed
 Then respective job is displayed............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check search functionality for invalid inputs" time="13.589097">
+<testcase classname="Test careers functionality" name="Check search functionality for invalid inputs" time="14.158354">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user inputs irrelevant keywords........................................passed
 Then error message displayed................................................passed

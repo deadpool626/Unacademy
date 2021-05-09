@@ -1,42 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="129.865572">
-<testcase classname="Test careers functionality" name="Check results by selecting Location filter" time="14.191095">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="7" time="140.693508">
+<testcase classname="Test careers functionality" name="Check results by selecting Location filter" time="17.465625">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user selects a location................................................passed
 Then jobs available at the location are displayed...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check results by selecting Department filter" time="34.841666">
+<testcase classname="Test careers functionality" name="Check results by selecting Department filter" time="36.598124">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user selects a department..............................................passed
 Then job title shown only for the department................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check results by selecting Work Type filter" time="13.870536">
+<testcase classname="Test careers functionality" name="Check results by selecting Work Type filter" time="14.928329">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user selects a work type...............................................passed
 Then titles with selected Work Type are displayed...........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check results by selecting Location, Department, Work Type filter" time="21.818803">
+<testcase classname="Test careers functionality" name="Check results by selecting Location, Department, Work Type filter" time="22.319774">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user selects any location, department, work type.......................passed
 Then results are updated....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check clear filters functionality" time="19.094894">
+<testcase classname="Test careers functionality" name="Check clear filters functionality" time="18.87425">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 And user have selected some filters.........................................passed
 When user clicks on clear filters...........................................passed
 Then all jobs are displayed.................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check search functionality" time="12.975807">
+<testcase classname="Test careers functionality" name="Check search functionality" time="15.159114">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user inputs a particular job title.....................................passed
 Then respective job is displayed............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Test careers functionality" name="Check search functionality for invalid inputs" time="13.072771">
+<testcase classname="Test careers functionality" name="Check search functionality for invalid inputs" time="15.348292">
 <system-out><![CDATA[Given user is on careers page...............................................passed
 When user inputs irrelevant keywords........................................passed
 Then error message displayed................................................passed

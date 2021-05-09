@@ -45,21 +45,21 @@ formatter.match({
   "location": "CareerStepDef.user_is_on_careers_page()"
 });
 formatter.result({
-  "duration": 10441788500,
+  "duration": 13542963900,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.user_selects_a_location()"
 });
 formatter.result({
-  "duration": 2366836000,
+  "duration": 2435603800,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.results_are_updated_according_to_the_selected_location()"
 });
 formatter.result({
-  "duration": 1382470500,
+  "duration": 1487056900,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,21 +101,21 @@ formatter.match({
   "location": "CareerStepDef.user_is_on_careers_page()"
 });
 formatter.result({
-  "duration": 7991426300,
+  "duration": 9191405200,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.user_selects_a_department()"
 });
 formatter.result({
-  "duration": 26571103300,
+  "duration": 27028772600,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.results_are_updated_according_to_the_selected_department()"
 });
 formatter.result({
-  "duration": 279136400,
+  "duration": 377946200,
   "status": "passed"
 });
 formatter.scenario({
@@ -157,21 +157,21 @@ formatter.match({
   "location": "CareerStepDef.user_is_on_careers_page()"
 });
 formatter.result({
-  "duration": 9215971800,
+  "duration": 10085852000,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.user_selects_a_work_type()"
 });
 formatter.result({
-  "duration": 3299031600,
+  "duration": 3389154400,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.results_are_updated_according_to_the_selected_work_type()"
 });
 formatter.result({
-  "duration": 1355532600,
+  "duration": 1453322300,
   "status": "passed"
 });
 formatter.scenario({
@@ -213,21 +213,21 @@ formatter.match({
   "location": "CareerStepDef.user_is_on_careers_page()"
 });
 formatter.result({
-  "duration": 9121448900,
+  "duration": 9406444100,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.user_selects_any_location_department_work_type()"
 });
 formatter.result({
-  "duration": 8065208200,
+  "duration": 8237768100,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.results_are_updated_according_to_the_selected_location_department_work_type()"
 });
 formatter.result({
-  "duration": 4632145500,
+  "duration": 4675562000,
   "status": "passed"
 });
 formatter.scenario({
@@ -274,28 +274,28 @@ formatter.match({
   "location": "CareerStepDef.user_is_on_careers_page()"
 });
 formatter.result({
-  "duration": 10422203800,
+  "duration": 9886322800,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.user_have_selected_some_filters()"
 });
 formatter.result({
-  "duration": 8159626500,
+  "duration": 8392364500,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.user_clicks_on_clear_filters()"
 });
 formatter.result({
-  "duration": 151741600,
+  "duration": 144127700,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.all_jobs_are_displayed()"
 });
 formatter.result({
-  "duration": 361322000,
+  "duration": 451435000,
   "status": "passed"
 });
 formatter.scenario({
@@ -337,21 +337,21 @@ formatter.match({
   "location": "CareerStepDef.user_is_on_careers_page()"
 });
 formatter.result({
-  "duration": 8327058400,
+  "duration": 10267579100,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.user_inputs_a_particular_job_title()"
 });
 formatter.result({
-  "duration": 280971400,
+  "duration": 401097800,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.respective_job_is_displayed()"
 });
 formatter.result({
-  "duration": 4367777000,
+  "duration": 4490436800,
   "status": "passed"
 });
 formatter.scenario({
@@ -393,21 +393,21 @@ formatter.match({
   "location": "CareerStepDef.user_is_on_careers_page()"
 });
 formatter.result({
-  "duration": 8204268400,
+  "duration": 10384062500,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.user_inputs_irrelevant_keywords()"
 });
 formatter.result({
-  "duration": 448659500,
+  "duration": 414054200,
   "status": "passed"
 });
 formatter.match({
   "location": "CareerStepDef.error_message_displayed()"
 });
 formatter.result({
-  "duration": 4419843300,
+  "duration": 4550175400,
   "status": "passed"
 });
 });

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="12" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="18" time="596.470856">
+<testcase classname="Test apply to job functionality" name="Check apply now functionality" time="57.876234">
+<system-out><![CDATA[Given user has selected a job...............................................passed
+When user clicks on apply now...............................................passed
+And enters valid data.......................................................passed
+Then application is submitted...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid FirstName" time="30.771996">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.invalid_first_name_and_last_name_is_displyed(ApplicationStepDef.java:117)&#13;&#10;&#9;at ✽.And invalid first name and last name is displyed(src/test/resources/Features/Application.feature:20)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters a fn1234567890 and ln1234567890............................passed
+Then user clicks on submit button...........................................passed
+And invalid first name and last name is displyed............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.invalid_first_name_and_last_name_is_displyed(ApplicationStepDef.java:117)
+	at ✽.And invalid first name and last name is displyed(src/test/resources/Features/Application.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid FirstName 2" time="31.510479">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.invalid_first_name_and_last_name_is_displyed(ApplicationStepDef.java:117)&#13;&#10;&#9;at ✽.And invalid first name and last name is displyed(src/test/resources/Features/Application.feature:20)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters a fnAditya@% and lnSurname@%...............................passed
+Then user clicks on submit button...........................................passed
+And invalid first name and last name is displyed............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.invalid_first_name_and_last_name_is_displyed(ApplicationStepDef.java:117)
+	at ✽.And invalid first name and last name is displyed(src/test/resources/Features/Application.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid FirstName 3" time="32.969155">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.invalid_first_name_and_last_name_is_displyed(ApplicationStepDef.java:117)&#13;&#10;&#9;at ✽.And invalid first name and last name is displyed(src/test/resources/Features/Application.feature:20)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters a fnabcdefghijklmnopqrstuvwxyzABCDEFGH and lnabcdefghijklmnopqrstuvwxyzABCDEFGH.passed
+Then user clicks on submit button...........................................passed
+And invalid first name and last name is displyed............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.invalid_first_name_and_last_name_is_displyed(ApplicationStepDef.java:117)
+	at ✽.And invalid first name and last name is displyed(src/test/resources/Features/Application.feature:20)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid FirstName 4" time="32.404396">
+<system-out><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters a fnAditya and lnNagargoje.................................passed
+Then user clicks on submit button...........................................passed
+And invalid first name and last name is displyed............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid mobile number" time="30.024332">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.error_is_displyed(ApplicationStepDef.java:142)&#13;&#10;&#9;at ✽.And invalid phone number is displyed(src/test/resources/Features/Application.feature:37)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters an invalid 1234567890......................................passed
+Then user clicks on submit button...........................................passed
+And invalid phone number is displyed........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.error_is_displyed(ApplicationStepDef.java:142)
+	at ✽.And invalid phone number is displyed(src/test/resources/Features/Application.feature:37)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid mobile number 2" time="31.692957">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.error_is_displyed(ApplicationStepDef.java:142)&#13;&#10;&#9;at ✽.And invalid phone number is displyed(src/test/resources/Features/Application.feature:37)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters an invalid 2345678901......................................passed
+Then user clicks on submit button...........................................passed
+And invalid phone number is displyed........................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.error_is_displyed(ApplicationStepDef.java:142)
+	at ✽.And invalid phone number is displyed(src/test/resources/Features/Application.feature:37)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid mobile number 3" time="32.515589">
+<system-out><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters an invalid 7234567890......................................passed
+Then user clicks on submit button...........................................passed
+And invalid phone number is displyed........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid location" time="30.38151">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)&#13;&#10;&#9;at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid as ()*&............................................passed
+Then user clicks on submit button...........................................passed
+And Location is not valid message is displayed..............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)
+	at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid location 2" time="30.946722">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)&#13;&#10;&#9;at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid as 12345...........................................passed
+Then user clicks on submit button...........................................passed
+And Location is not valid message is displayed..............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)
+	at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid location 3" time="31.357342">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)&#13;&#10;&#9;at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid as Aba/123.........................................passed
+Then user clicks on submit button...........................................passed
+And Location is not valid message is displayed..............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)
+	at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid location 4" time="33.086008">
+<system-out><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid as Aurangabad......................................passed
+Then user clicks on submit button...........................................passed
+And Location is not valid message is displayed..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid location 5" time="29.593304">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)&#13;&#10;&#9;at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid as `...............................................passed
+Then user clicks on submit button...........................................passed
+And Location is not valid message is displayed..............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)
+	at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid location 6" time="31.264693">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)&#13;&#10;&#9;at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid as abcdefghijklmnopqrstuvwxyzABCDEFGH..............passed
+Then user clicks on submit button...........................................passed
+And Location is not valid message is displayed..............................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.location_is_not_valid_message_is_displayed(ApplicationStepDef.java:164)
+	at ✽.And Location is not valid message is displayed(src/test/resources/Features/Application.feature:53)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid relevant experience" time="32.227113">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.invalid_relative_experience_message_should_be_displayed(ApplicationStepDef.java:186)&#13;&#10;&#9;at ✽.And Invalid relative experience message should be displayed(src/test/resources/Features/Application.feature:72)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid the100.............................................passed
+Then user clicks on submit button...........................................passed
+And Invalid relative experience message should be displayed.................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.invalid_relative_experience_message_should_be_displayed(ApplicationStepDef.java:186)
+	at ✽.And Invalid relative experience message should be displayed(src/test/resources/Features/Application.feature:72)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid relevant experience 2" time="35.059756">
+<system-out><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid the0...............................................passed
+Then user clicks on submit button...........................................passed
+And Invalid relative experience message should be displayed.................passed
+]]></system-out>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid relevant experience 3" time="30.494226">
+<failure message="java.lang.AssertionError: expected [true] but found [false]&#13;&#10;&#9;at org.testng.Assert.fail(Assert.java:96)&#13;&#10;&#9;at org.testng.Assert.failNotEquals(Assert.java:776)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:44)&#13;&#10;&#9;at org.testng.Assert.assertTrue(Assert.java:54)&#13;&#10;&#9;at stepDefinition.ApplicationStepDef.invalid_relative_experience_message_should_be_displayed(ApplicationStepDef.java:186)&#13;&#10;&#9;at ✽.And Invalid relative experience message should be displayed(src/test/resources/Features/Application.feature:72)&#13;&#10;"><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid the21..............................................passed
+Then user clicks on submit button...........................................passed
+And Invalid relative experience message should be displayed.................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at stepDefinition.ApplicationStepDef.invalid_relative_experience_message_should_be_displayed(ApplicationStepDef.java:186)
+	at ✽.And Invalid relative experience message should be displayed(src/test/resources/Features/Application.feature:72)
+]]></failure>
+</testcase>
+<testcase classname="Test apply to job functionality" name="Check submission on invalid relevant experience 4" time="32.295044">
+<system-out><![CDATA[Given user has selected a job...............................................passed
+And clicked on apply now....................................................passed
+When user enters invalid the5...............................................passed
+Then user clicks on submit button...........................................passed
+And Invalid relative experience message should be displayed.................passed
+]]></system-out>
+</testcase>
+</testsuite>
